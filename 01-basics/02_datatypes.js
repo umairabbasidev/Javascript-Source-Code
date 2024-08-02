@@ -19,4 +19,3 @@
 
 // object array function
 
-// two classes completed
