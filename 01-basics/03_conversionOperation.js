@@ -79,20 +79,17 @@
 // console.log(getInBoolean); // true
 // console.log(typeof getInBoolean) // boolean
 
-
 // let isLoggedIn = 0;
 
 // let getInBoolean = Boolean(isLoggedIn);
 // console.log(getInBoolean); // false
 // console.log(typeof getInBoolean) // boolean
 
-
 // let isLoggedIn = "";
 
 // let getInBoolean = Boolean(isLoggedIn);
 // console.log(getInBoolean); // false
 // console.log(typeof getInBoolean) // boolean
-
 
 // summary
 
@@ -103,13 +100,52 @@
 // undefined => false
 // null => false
 
-
 // string to number;
-let someNumber = 12;
+// let someNumber = 12;
 
-let getInStr = String(someNumber);
-console.log(getInStr)
-console.log(typeof getInStr)
+// let getInStr = String(someNumber);
+// console.log(getInStr)
+// console.log(typeof getInStr)
+
+// console.log(3 + 4 * 5 % 3);
+
+// *************** Memory in js************
+
+// Stack (primitive data types[copy of that variable]), Heap (non-primitive-data-types[original access ])
+
+// stack memory example
+
+let myYoutubeName = "umairabbasidotcom";
+let anotherName = myYoutubeName;
+
+anotherName = "umairdotcom";
+// console.log("myYoutubeName", myYoutubeName);
+// console.log("anotherName", anotherName);
+
+// Heap memory example
+
+let userOne = {
+  name: "Umair",
+  email: "umair@google.com",
+  skill: "Developer",
+};
+
+let userTwo = userOne;
+
+userTwo.skill = "Software Engineer";
+console.log("userOne", userOne);
+console.log("userTwo", userTwo);
 
 
-console.log(3 + 4 * 5 % 3);
+
+
+
+// ********** Summary*****************
+
+// all primitives data types like string, number when it is declared it 
+// goes into stack memory and when return it will give  copy of that 
+// varaible not give original value
+
+// all non-primitives data types like objects and arrays  when it is declaredi t 
+// goes into heap memory and when return it will give  original value  of that varaible not give original value and when me change one variable if the other varaible is equal to first variable 
+// then if we change second variable so the reference is same in both variable so both variables are changed
